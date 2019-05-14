@@ -561,7 +561,7 @@ boolean isHit(float ax, float ay, float aw, float ah, float bx, float by, float 
 String convertFramesToTimeString(int frames){	// Requirement #4
   float mm=floor(frames/60/60);
   float ss=floor((frames/60))%60;
-	return (nf(int(mm),2,0)+":"+nf(ss,2,0));
+	return (nf(int(mm),2)+":"+nf(int(ss),2));
 }
 
 color getTimeTextColor(int frames){				// Requirement #5
